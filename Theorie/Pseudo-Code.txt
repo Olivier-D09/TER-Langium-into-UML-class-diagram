@@ -1,0 +1,17 @@
+listOfJump = [infers...] (à définir avec la syntaxe de Langium. 
+UMLFile = open (emplacement du fichier, mémoire ou non) 
+listOfClass = [] (liste des tokens récupéré par la première passe) 
+
+
+for l in linesInFile :
+  for w in l:
+    if upper(w[1]) == True && lower(w[2]) && w+1 == ":" :
+      listOfClass.append(w)
+      UMLFile.write("class" + w + "{ \n")
+    elif w in listOfJump || w+1 in listOfJump :
+      passe jusqu'au ":" 
+    else 
+      passe a la ligne suivante  
+
+
+ou split avec le caractère : 
