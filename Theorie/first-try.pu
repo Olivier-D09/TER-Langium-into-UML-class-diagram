@@ -1,0 +1,20 @@
+@startuml
+
+Class Person {
+-name : ID
+}
+
+Class Greeting {
+-"hello"
+}
+
+Class Salutation {
+-"bonjour"
+}
+
+
+Person <|-down Greeting
+Person <|-down- Salutation
+
+
+@enduml
