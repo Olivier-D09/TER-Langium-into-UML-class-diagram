@@ -1,0 +1,128 @@
+@startuml
+
+Class Model {
+}
+
+Class Stmt {
+}
+
+Class Cmd {
+}
+
+Class Macro {
+- def : ID 
+- args : Expr
+}
+
+Class Def {
+- name : ID
+-params : Param
+}
+
+Class Pen {
+-mode : up | down
+}
+
+Class Move {
+- ex : Expr
+- ey : Expr
+}
+
+Class Color {
+-r : Expr
+-g : Expr
+-b : Expr
+-color : ID |HEX 
+}
+
+Class For {
+-var : Param
+-e1 : Expr
+-e2 : Expr
+}
+
+Class Block {
+-body : Stmt
+}
+
+Class Param {
+-name : ID
+}
+
+Class Expr {
+}
+
+Class Add {
+-e1 : current 
+-op : + |- 
+-e2 : Mult
+}
+
+Class Mult{
+-e1 : current
+-op : * | /
+-e2 : PrimExpr
+}
+
+Class PrimExpr {
+}
+
+Class Lit {
+- val : NUMBER 
+}
+
+Class Ref {
+-val :[Param:ID]
+}
+
+Class Group {
+-ge : Expr
+}
+
+Class NegExpr {
+- "-" ne : Expr
+}
+
+
+Model <|-down Stmt
+Model <|-down- Def
+
+Stmt <|-down Cmd
+Stmt <|-down Macro
+
+Cmd <|-down Pen
+Cmd <|-down Move
+Cmd <|-down Color
+Cmd <|-down For
+
+Macro <|-down Expr
+
+Def <|-down Param
+Def <|-down Block
+
+Move <|-down Expr
+
+Color <|-down Expr
+
+For <|-down Param
+For <|-down Expr
+For <|-down Block
+
+Block <|-down Stmt
+
+Expr <|-down Add
+
+Add <|-down Mult
+
+Mult <|-down PrimExpr
+
+PrimExpr <|-down Lit
+PrimExpr <|-down Ref
+PrimExpr <|-down Group
+PrimExpr <|-down NegExpr
+
+Group <|-down Expr
+
+NegExpr <|-down Expr
+
+@enduml
