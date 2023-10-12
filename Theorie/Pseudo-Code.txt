@@ -15,3 +15,6 @@ for l in linesInFile :
 
 
 ou split avec le caractère : 
+
+
+à essaye de fare en typescript pour l'implémenter
