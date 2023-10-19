@@ -6,3 +6,9 @@ https://www.youtube.com/watch?v=2GqpdfIAhz8 (exlication de LSP) //// pas encore 
 
 https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/ (explications par microsoft) 
 
+---------
+
+https://stackoverflow.com/questions/74947026/get-all-the-strings-using-a-vs-code-language-server (extraction tokens) textDocument/semanticTokens/full
+
+
+
