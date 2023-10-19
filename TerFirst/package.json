@@ -16,6 +16,10 @@
       {
         "command": "TerFirst.Try",
         "title": "Hello World"
+      },
+      {
+        "command": "TerFirst.essai",
+        "title": "Essai"
       }
     ]
   },

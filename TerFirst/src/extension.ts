@@ -19,7 +19,14 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from TerFirstTry!');
 	});
 
+	let try1 = vscode.commands.registerCommand('TerFirst.essai',() => {
+		vscode.window.createOutputChannel('try',);
+	});
+
 	context.subscriptions.push(disposable);
+	context.subscriptions.push(try1);
+
+	
 }
 
 // This method is called when your extension is deactivated
