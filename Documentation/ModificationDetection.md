@@ -4,6 +4,8 @@ https://github.com/microsoft/vscode-extension-samples/blob/main/nodefs-provider-
 
 https://code.visualstudio.com/api/references/vscode-api // fonctions pour coder une api vscode 
 
+--------------------------------
 
+code dans Decorator sample détecte nouveux caractére + action sur la fenêtre 
 
 
