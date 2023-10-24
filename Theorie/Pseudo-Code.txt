@@ -1,20 +1,25 @@
-listOfJump = [infers...] (à définir avec la syntaxe de Langium. 
-UMLFile = open (emplacement du fichier, mémoire ou non) 
-listOfClass = [] (liste des tokens récupéré par la première passe) 
+tokens[] = vscode extraction...      // récupérations des tokens via lsp  
+linesList = linesOfToken(tokens[])   // fonction d'extraction des numéros de ligne des tokes (fait parti de la structure de semantic-token-sample)  
+tokens[] = tri(tokens[])     // tri des tokens si nécessaire 
 
 
-for l in linesInFile :
-  for w in l:
-    if upper(w[1]) == True && lower(w[2]) && w+1 == ":" :
-      listOfClass.append(w)
-      UMLFile.write("class" + w + "{ \n")
-    elif w in listOfJump || w+1 in listOfJump :
-      passe jusqu'au ":" 
+
+for i in range( len(tokens[])):
+  nLine = lineList[i] 
+  token = tokens[i] 
+  write("class " + token + " { ", outputFile) 
+  line = file.read(sourceFile, nLine)     // récupère le contenu de la ligne du token 
+  temp = line.split(":") 
+  line = temp[1] 
+  for w in line :
+    if w in tokens[] :
+       linkprocess.append(w) 
     else 
-      passe a la ligne suivante  
+            // repérer variable et type pour l'ecrire dans la class 
+    for l in linkprocess :
+      write( token + " <=down " + l, outputFile) 
 
 
-ou split avec le caractère : 
 
 
 à essaye de fare en typescript pour l'implémenter
