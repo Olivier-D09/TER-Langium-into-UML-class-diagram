@@ -4,3 +4,4 @@ https://code.visualstudio.com/api/references/contribution-points (liste de comma
 
 https://code.visualstudio.com/api/references/vscode-api (ilste de commandes de l'api de vscode)
 
+https://github.com/qjebbs/vscode-plantuml/tree/master (code source de plantuml) 
