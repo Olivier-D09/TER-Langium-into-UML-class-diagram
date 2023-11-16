@@ -117,7 +117,7 @@ class DocumentSemanticTokensProvider implements vscode.DocumentSemanticTokensPro
 		
 		const tmp = lsp ;
 		//lsp.SemanticTokensRequest ;
-		//extensions.getExtension("langium.langium-vscode");
+		//vscode.extensions.getExtension("langium.langium-vscode");
 		console.log(tmp);
 		return r;
 	}
